@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>동적함수예제</title>
+    <script>
+        var body;
+        if(confirm("더할래, 곱할래") == true) {
+            body = "return a + b;";
+        } else {
+            body = "return a * b;";
+        }
+
+        var add = new Function("a", "b", body);
+        document.write("result = " + add(2,3) + "<br>");
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
