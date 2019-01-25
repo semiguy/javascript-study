@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>instanceof example</title>
+    <script>
+       function Human(name, age) {
+           this.name = name;
+           this.age = age;
+       }
+
+       function Dog(type, weight, male) {
+           this.type = type;
+           this.weight = weight;
+           this.male = male;
+       }
+
+       var test1 = new Human("테스트1", 20);
+
+       if(test1 instanceof Human) {
+           document.write("test1은 사람입니다.<br>");
+       }
+
+       var dog1 = new Dog("진도", "100", false);
+
+       if(dog1 instanceof Human) {
+        document.write("dog1은 사람입니다.<br>");
+       }
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
