@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>prototype Example</title>
+    <script>
+        function Human(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Human.prototype.intro = function() {
+            document.write("name = " + this.name + "<br>");
+            document.write("age = " + this.age + "<br>");
+        };
+
+        var t1 = new Human("테스터2", 22);
+        var t2 = new Human("테스터3", 23);
+
+        t1.intro();
+        t2.intro();
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
