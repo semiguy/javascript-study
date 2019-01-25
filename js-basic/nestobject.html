@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nest Object Example</title>
+    <script>
+        var human = {
+            name: "테스터",
+            age: 20,
+            address : {
+                city: "성남시",
+                dong: "삼평동",
+                bunji: 670
+            },
+            info: function() {
+                document.write("이름 = " + human.name + "<br>");
+                document.write("나이 = " + human.age + "<br>");
+            }
+        };
+
+        human.info();
+        document.write("주소 = " + human.address.city + " " + human.address.dong + " " + human.address.bunji + "<br>");
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
