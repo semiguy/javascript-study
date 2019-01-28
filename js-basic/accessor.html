@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>accessor Example</title>
+    <script>
+        var human = {
+            name: "테스트1",
+            age : 20
+        };
+
+        var $salary;
+
+        Object.defineProperty(human, "salary", {
+            enumerable: true,
+            get: function() {
+                return $salary;
+            },
+            set: function(value) {
+                if(value > 0) {
+                    $salary = value;
+                }
+            }
+        });
+
+        human.salary = 520;
+        human.salary = -200;
+
+        for(var i in human) {
+            document.write(human[i] + "<br>");
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
