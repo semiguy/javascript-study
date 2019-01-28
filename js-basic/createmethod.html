@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>create method Example</title>
+    <script>
+        var human = Object.create({},{
+            name: {
+                value: "테스트1",
+                enumerable: true,
+            },
+            age: {
+                value: 20,
+            },
+        });
+
+        for(var i in human) {
+            document.write(human[i] + "<br>");
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
