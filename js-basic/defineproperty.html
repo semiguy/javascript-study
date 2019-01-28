@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>defineProperty Example</title>
+    <script>
+        var human = {
+            name: "테스트1",
+            age : 20
+        };
+
+        Object.defineProperty(human, "salary", {
+            value: 520,
+            enumerable:false,
+            writable:false,
+        });
+
+        human.salary = 650;
+
+        for(var i in human) {
+            document.write(human[i] + "<br>");
+        }
+
+        document.write("----------------<br>");
+        document.write(human.salary + "<br>");
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
