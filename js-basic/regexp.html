@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>regexp Example</title>
+    <script>
+        var str = "test S123 s-45 s67M S-8m s-123M s-superTM";
+        // s나 S로 시작하고 - 다음에 숫자는 여러 개 와도 상관없으며,
+        // T는 있거나 없거나 상관없고, 마지막은 반드시 M으로 끝나야 한다.
+        var reg = new RegExp("[sS]-[0-9]*T?M");
+        var result = reg.exec(str);
+
+        document.write(result + "<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
