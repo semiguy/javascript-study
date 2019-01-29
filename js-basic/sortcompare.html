@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>sort compare Example</title>
+    <script>
+        var score = [82, 96, 54, 76, 92, 99, 69, 88];
+        document.write("before = " + score + "<br>");
+
+        function compare(left, right) {
+            return right - left;
+            //return left - right;
+        }
+
+        score.sort(compare);
+
+        document.write("after = " + score + "<br>");
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
