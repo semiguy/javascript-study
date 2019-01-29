@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>calc date Example</title>
+    <script>
+        var now = new Date();
+        var epoch = now.getTime();
+        epoch += (86400 * 1000 * 3)
+        now.setTime(epoch);
+
+        document.write("사흘 후는 " + now.toLocaleDateString() + "입니다.");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
