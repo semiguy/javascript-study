@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Jumin Example</title>
+    <script>
+        var str = "890629-1914920";
+        // /\d{6}-[1234]\d{6}/
+        var result = str.search(/[0-9]{6}-[1234][0-9]{6}/);
+        if(result != -1) {
+            document.write("유효한 주민 등록 번호입니다.");
+        } else {
+            document.write("주만 등록 번호가 올바르지 않습니다.");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
