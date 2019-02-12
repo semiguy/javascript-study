@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>first child example</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+   <h3>문단0</h3>
+   <h3>문단1</h3>
+   <h3>문단2</h3>
+   <h3>문단3</h3>
+   <h3>문단4</h3>
+   <script>
+       var arColor = ['yellow', 'red', 'green', 'blue', 'gray'];
+       $('h3').each(function(index, item) {
+        $(item).css('background', arColor[index]);
+       });
+
+       /*
+       function setColor(index, item) {
+           $(item).css('background', arColor[index]);
+       }
+       $('h3').each(setColor);
+       */
+       /*
+       var h3s = $('h3');
+       for(var i=0; i < h3s.length; i++) {
+           h3s.eq(i).css('background', arColor[i]);
+       }
+       */
+       /*
+       $('h3').each(function(index, item) {
+        $(this).css('background', arColor[index]);
+       });
+       */
+   </script>
+</body>
+</html>
